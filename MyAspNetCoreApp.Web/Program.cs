@@ -24,4 +24,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// baseUrl/products/pencil/1 => 1 is not mandatory
+// baseUrl/home/index => default
+// baseUrl/home/privacy
+
 app.Run();
