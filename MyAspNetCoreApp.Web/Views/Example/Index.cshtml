@@ -14,3 +14,13 @@
 
 <hr />
 <p>Age: @ViewData["age"]</p>
+
+<h1>Names:</h1>
+@foreach (var item in ViewData["names"] as List<string>)
+{
+    <p>@item</p>
+}
+
+<p>@ViewBag.Person.Id</p>
+<p>@ViewBag.Person.Name</p>
+<p>@ViewBag.Person.Age</p>

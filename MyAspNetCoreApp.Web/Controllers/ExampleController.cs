@@ -12,6 +12,10 @@ namespace MyAspNetCoreApp.Web.Controllers
 
             ViewData["age"] = 30;
 
+            ViewData["names"] = new List<string>() { "ahmet", "mehmet", "hasan" };
+
+            ViewBag.Person = new { Id = 1, Name = "Ahmet", Age = 23 };
+
             return View();
         }
 
