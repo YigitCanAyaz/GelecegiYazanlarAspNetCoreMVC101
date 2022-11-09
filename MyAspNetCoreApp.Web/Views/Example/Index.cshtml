@@ -5,3 +5,12 @@
 
 <h1>Example Controller, Index page</h1>
 
+@{
+    var name = ViewBag.Name;
+    <p>@name</p>
+}
+<p>@name</p>
+<p>@ViewBag.Name</p>
+
+<hr />
+<p>Age: @ViewData["age"]</p>
