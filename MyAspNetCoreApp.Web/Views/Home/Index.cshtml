@@ -4,16 +4,27 @@
     var alert = "bu bir uyarı mesajıdır.";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@section Scripts{
+    <script type="text/javascript">
+        alert("Welcome to our page!");
 
-<partial name="_MenuPartialView"></partial>
-@*@Html.PartialAsync("_MenuPartialView"); same with upper code*@
-<span>@DateTime.Now.ToShortDateString()</span>
+        $(document).ready(function () {
+            console.log("Welcome to our page!");
+        });
+    </script>
 
-@{
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+    <partial name="_MenuPartialView"></partial>
+    @*@Html.PartialAsync("_MenuPartialView"); same with upper code*@
+    <span>@DateTime.Now.ToShortDateString()</span>
+
+    @{
     var dateTime = @DateTime.Now.ToShortDateString();
     var message = "hello";
 
