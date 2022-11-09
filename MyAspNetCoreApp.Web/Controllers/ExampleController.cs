@@ -9,6 +9,14 @@ namespace MyAspNetCoreApp.Web.Controllers
             return View();
         }
 
+        public IActionResult Index2()
+        {
+           // return View();
+
+            // Action, Controller
+            return RedirectToAction("Index", "Example");
+        }
+
         public IActionResult ContentResult()
         {
             return Content("ContentResult");
