@@ -12,12 +12,12 @@ namespace MyAspNetCoreApp.Web.Controllers
     {
         public IActionResult Index()
         {
-            var productList = new List<Product>()
-            {
-                new() {Id = 1, Name = "Pencil"},
-                new() {Id = 2, Name = "Notebook"},
-                new() {Id = 3, Name = "Eraser"},
-            };
+            //var productList = new List<Product>()
+            //{
+            //    new() {Id = 1, Name = "Pencil"},
+            //    new() {Id = 2, Name = "Notebook"},
+            //    new() {Id = 3, Name = "Eraser"},
+            //};
 
             //ViewBag.Name = "Asp.net Core";
 
@@ -29,7 +29,7 @@ namespace MyAspNetCoreApp.Web.Controllers
 
             //ViewBag.Person = new { Id = 1, Name = "Ahmet", Age = 23 };
 
-            return View(productList);
+            return View(/*productList*/);
         }
 
         public IActionResult Index2()
