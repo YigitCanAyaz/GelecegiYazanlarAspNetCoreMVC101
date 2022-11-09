@@ -27,6 +27,21 @@ namespace MyAspNetCoreApp.Web.Controllers
             return RedirectToAction("Index", "Example");
         }
 
+        public IActionResult Yca()
+        {
+            TempData["surname"] = "Yildiz";
+
+            return View();
+        }
+
+        public IActionResult Yca2()
+        {
+
+            // var surname = TempData["surname"]; we can even do that
+
+            return View();
+        }
+
         public IActionResult ParameterView(int id)
         {
             // Sending data with RedirectToAction
